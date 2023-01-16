@@ -1,0 +1,20 @@
+@tailwind base;
+@layer base {
+    h2 {
+        @apply text-sm;
+    }
+
+    li {
+        @apply mini:w-[45%] text-sm;
+    }
+}
+
+
+@tailwind components;
+@layer components{
+    .card-comic {
+        @apply w-28 h-36 rounded-sm shadow-md xl:w-32 xl:h-40;
+    }
+}
+
+@tailwind utilities;
