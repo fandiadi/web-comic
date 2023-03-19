@@ -6,6 +6,9 @@ namespace Database\Seeders;
 
 use App\Models\Type;
 use App\Models\User;
+use App\Models\Comic;
+use App\Models\Genre;
+use App\Models\Post;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -17,24 +20,60 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        User::create([
-            'name' => 'Fandi Adi',
-            'username' => 'fandiadi',
-            'email' => 'fandiadi@gmail.com',
-            'password' => bcrypt('password'),
-        ]);
 
-        Type::create([
-            'name' => 'Manga',
-            'slug' => 'manga',
+        Post::create([
+            'comic_id' => '1',
+            'username_id' => '1',
+            'slug' => 'naruto-shipuden',
+            'slug_chapter' => 'naruto-shipuden-chapter-1',
+            'chapter' => '1',
+            'post_status' => 'Ongoing',
+            'project_owner' => 'bacakomik',
         ]);
-        Type::create([
-            'name' => 'Manhua',
-            'slug' => 'manhua',
+        Post::create([
+            'comic_id' => '1',
+            'username_id' => '1',
+            'slug' => 'naruto-shipuden',
+            'slug_chapter' => 'naruto-shipuden-chapter-2',
+            'chapter' => '2',
+            'post_status' => 'Ongoing',
+            'project_owner' => 'bacakomik',
         ]);
-        Type::create([
-            'name' => 'Manhwa',
-            'slug' => 'Manhwa',
+        Post::create([
+            'comic_id' => '2',
+            'username_id' => '1',
+            'slug' => 'hell-mode',
+            'slug_chapter' => 'hell-mode-chapter-1',
+            'chapter' => '1',
+            'post_status' => 'Ongoing',
+            'project_owner' => 'readcomic',
+        ]);
+        Post::create([
+            'comic_id' => '2',
+            'username_id' => '2',
+            'slug' => 'hell-mode',
+            'slug_chapter' => 'hell-mode-chapter-2',
+            'chapter' => '2',
+            'post_status' => 'Ongoing',
+            'project_owner' => 'readcomic',
+        ]);
+        Post::create([
+            'comic_id' => '3',
+            'username_id' => '1',
+            'slug' => 'ragna-crimson',
+            'slug_chapter' => 'ragna-crimson-chapter-1',
+            'chapter' => '1',
+            'post_status' => 'Ongoing',
+            'project_owner' => 'bacakomik',
+        ]);
+        Post::create([
+            'comic_id' => '3',
+            'username_id' => '1',
+            'slug' => 'ragna-crimson',
+            'slug_chapter' => 'ragna-crimson-chapter-2',
+            'chapter' => '2',
+            'post_status' => 'Ongoing',
+            'project_owner' => 'bacakomik',
         ]);
     }
 }

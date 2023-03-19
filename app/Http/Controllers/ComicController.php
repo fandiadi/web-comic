@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Comic;
 use App\Http\Requests\StoreComicRequest;
 use App\Http\Requests\UpdateComicRequest;
+use App\Models\Post;
 
 class ComicController extends Controller
 {
@@ -15,7 +16,9 @@ class ComicController extends Controller
      */
     public function index()
     {
-        //
+        // return view('sections.newestupdate', [
+        //     'posts' => Post::all(),
+        // ]);
     }
 
     /**
@@ -47,7 +50,8 @@ class ComicController extends Controller
      */
     public function show(Comic $comic)
     {
-        //
+
+        // dd($comic);
     }
 
     /**

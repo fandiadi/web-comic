@@ -10,53 +10,54 @@
             <div class="grid grid-cols-3 -mt-3 gap-3 px-4 py-1 xl:grid-cols-6 xl:gap-5 text-darktextprimary">
                 {{-- Start Comic --}}
                 <div class="group/comic py-1 mt-4">
-                    <div class="group/item">
-                        <img class="w-28 h-36 rounded-sm shadow-md lg:hover:scale-125 hover:mb-5 hover:mt-3 xl:w-32 xl:h-40" src="https://source.unsplash.com/400x600?comic" alt="image">
+                    <div class="relative">
+                        <a href=""><img class="card-comic hover:brightness-50" src="https://source.unsplash.com/400x600?comic" alt="image"></a>
+                        <span class="card-flag fi fi-jp"></span>
                     </div>
-                    <h2 class="text-sm">Judul asldkalskd...</h2>
-                    <h2 class="text-sm">Chapter 17</h2>
-                    <h2 class="lg:invisible group-hover/comic:visible text-sm">⭐⭐⭐⭐</h2>
+                    <a href=""><h2 class="group-hover/comic:text-texthover text-sm font-semibold">Judul asldkalskd...</h2></a>
+                    <a href=""><h2 class="text-xs hover:text-texthover">Chapter 17</h2></a>
                 </div>
                 <div class="group/comic py-1 mt-4">
-                    <div class="group/item">
-                        <img class="w-28 h-36 rounded-sm shadow-md lg:hover:scale-125 hover:mb-5 hover:mt-3 xl:w-32 xl:h-40" src="https://source.unsplash.com/400x600?comic" alt="image">
+                    <div class="relative">
+                        <a href=""><img class="card-comic hover:brightness-50" src="https://source.unsplash.com/400x600?comic" alt="image"></a>
+                        <span class="card-flag fi fi-jp"></span>
                     </div>
-                    <h2 class="text-sm">Judul asldkalskd...</h2>
-                    <h2 class="text-sm">Chapter 17</h2>
-                    <h2 class="lg:invisible group-hover/comic:visible text-sm">⭐⭐⭐⭐</h2>
+                    <a href=""><h2 class="group-hover/comic:text-texthover text-sm font-semibold">Judul asldkalskd...</h2></a>
+                    <a href=""><h2 class="text-xs hover:text-texthover">Chapter 17</h2></a>
                 </div>
                 <div class="group/comic py-1 mt-4">
-                    <div class="group/item">
-                        <img class="w-28 h-36 rounded-sm shadow-md lg:hover:scale-125 hover:mb-5 hover:mt-3 xl:w-32 xl:h-40" src="https://source.unsplash.com/400x600?comic" alt="image">
+                    <div class="relative">
+                        <a href=""><img class="card-comic hover:brightness-50" src="https://source.unsplash.com/400x600?comic" alt="image"></a>
+                        <span class="card-flag fi fi-jp"></span>
                     </div>
-                    <h2 class="text-sm">Judul asldkalskd...</h2>
-                    <h2 class="text-sm">Chapter 17</h2>
-                    <h2 class="lg:invisible group-hover/comic:visible text-sm">⭐⭐⭐⭐</h2>
+                    <a href=""><h2 class="group-hover/comic:text-texthover text-sm font-semibold">Judul asldkalskd...</h2></a>
+                    <a href=""><h2 class="text-xs hover:text-texthover">Chapter 17</h2></a>
                 </div>
                 <div class="group/comic py-1 mt-4">
-                    <div class="group/item">
-                        <img class="w-28 h-36 rounded-sm shadow-md lg:hover:scale-125 hover:mb-5 hover:mt-3 xl:w-32 xl:h-40" src="https://source.unsplash.com/400x600?comic" alt="image">
+                    <div class="relative">
+                        <a href=""><img class="card-comic hover:brightness-50" src="https://source.unsplash.com/400x600?comic" alt="image"></a>
+                        <span class="card-flag fi fi-jp"></span>
                     </div>
-                    <h2 class="text-sm">Judul asldkalskd...</h2>
-                    <h2 class="text-sm">Chapter 17</h2>
-                    <h2 class="lg:invisible group-hover/comic:visible text-sm">⭐⭐⭐⭐</h2>
+                    <a href=""><h2 class="group-hover/comic:text-texthover text-sm font-semibold">Judul asldkalskd...</h2></a>
+                    <a href=""><h2 class="text-xs hover:text-texthover">Chapter 17</h2></a>
                 </div>
                 <div class="group/comic py-1 mt-4">
-                    <div class="group/item">
-                        <img class="w-28 h-36 rounded-sm shadow-md lg:hover:scale-125 hover:mb-5 hover:mt-3 xl:w-32 xl:h-40" src="https://source.unsplash.com/400x600?comic" alt="image">
+                    <div class="relative">
+                        <a href=""><img class="card-comic hover:brightness-50" src="https://source.unsplash.com/400x600?comic" alt="image"></a>
+                        <span class="card-flag fi fi-jp"></span>
                     </div>
-                    <h2 class="text-sm">Judul asldkalskd...</h2>
-                    <h2 class="text-sm">Chapter 17</h2>
-                    <h2 class="lg:invisible group-hover/comic:visible text-sm">⭐⭐⭐⭐</h2>
+                    <a href=""><h2 class="group-hover/comic:text-texthover text-sm font-semibold">Judul asldkalskd...</h2></a>
+                    <a href=""><h2 class="text-xs hover:text-texthover">Chapter 17</h2></a>
                 </div>
                 <div class="group/comic py-1 mt-4">
-                    <div class="group/item">
-                        <img class="w-28 h-36 rounded-sm shadow-md lg:hover:scale-125 hover:mb-5 hover:mt-3 xl:w-32 xl:h-40" src="https://source.unsplash.com/400x600?comic" alt="image">
+                    <div class="relative">
+                        <a href=""><img class="card-comic hover:brightness-50" src="https://source.unsplash.com/400x600?comic" alt="image"></a>
+                        <span class="card-flag fi fi-jp"></span>
                     </div>
-                    <h2 class="text-sm">Judul asldkalskd...</h2>
-                    <h2 class="text-sm">Chapter 17</h2>
-                    <h2 class="lg:invisible group-hover/comic:visible text-sm">⭐⭐⭐⭐</h2>
+                    <a href=""><h2 class="group-hover/comic:text-texthover text-sm font-semibold">Judul asldkalskd...</h2></a>
+                    <a href=""><h2 class="text-xs hover:text-texthover">Chapter 17</h2></a>
                 </div>
+
 
                 {{-- Start Comic --}}
             </div>

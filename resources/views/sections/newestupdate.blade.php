@@ -3,41 +3,23 @@
         <h1 class="font-semibold shadow-md text-textprimary hover:text-texthover"><a href="#">Newest Update</a></h1>
     </div>
 </div>
+
+{{-- @dd($posts) --}}
 <div class="flex flex-wrap justify-center text-darktextprimary mini:space-x-3">
-    <div class="py-1 mt-1">
-        <img class="card-comic lg:hover:scale-125 hover:mb-5 hover:mt-3" src="https://source.unsplash.com/400x600?comic" alt="image">
-        <h2 class="">Judul asldkalskd...</h2>
-        <h2 class="">Chapter</h2>
-        <h2 class="mini:text-center xl:text-start">Rating ⭐⭐⭐⭐</h2>
+    @foreach ($updates as $update)
+    <div class="group/comic py-1 mt-1">
+        <div class="relative">
+            <a href=""><img class="card-comic hover:brightness-50" src="/storage/comic-cover/{{ $update->comic->image_cover }}" alt="{{ $update->comic->title }}"></a>
+            <span class="card-flag fi fi-{{ $update->comic->type->code }}"></span>
+        </div>
+        <div class="w-[128px] line-clamp-2">
+            <a href="/preview/{{ $update->comic->slug }}"><h2 class=" group-hover/comic:text-texthover text-sm font-semibold">{{ $update->comic->title }}</h2></a>
+        </div>
+        <a href="{{ $update->slug_chapter }}"><h2 class="text-xs hover:text-texthover">Chapter {{ $update->chapter }}</h2></a>
+        <h2 class="mini:text-center xl:text-start">⭐⭐⭐⭐</h2>
     </div>
-    <div class="py-1 mt-1">
-        <img class="card-comic lg:hover:scale-125 hover:mb-5 hover:mt-3" src="https://source.unsplash.com/400x600?comic" alt="image">
-        <h2 class="">Judul asldkalskd...</h2>
-        <h2 class="">Chapter</h2>
-        <h2 class="mini:text-center xl:text-start">Rating ⭐⭐⭐⭐</h2>
-    </div>
-    <div class="py-1 mt-1">
-        <img class="card-comic lg:hover:scale-125 hover:mb-5 hover:mt-3" src="https://source.unsplash.com/400x600?comic" alt="image">
-        <h2 class="">Judul asldkalskd...</h2>
-        <h2 class="">Chapter</h2>
-        <h2 class="mini:text-center xl:text-start">Rating ⭐⭐⭐⭐</h2>
-    </div>
-    <div class="py-1 mt-1">
-        <img class="card-comic lg:hover:scale-125 hover:mb-5 hover:mt-3" src="https://source.unsplash.com/400x600?comic" alt="image">
-        <h2 class="">Judul asldkalskd...</h2>
-        <h2 class="">Chapter</h2>
-        <h2 class="mini:text-center xl:text-start">Rating ⭐⭐⭐⭐</h2>
-    </div>
-    <div class="py-1 mt-1">
-        <img class="card-comic lg:hover:scale-125 hover:mb-5 hover:mt-3" src="https://source.unsplash.com/400x600?comic" alt="image">
-        <h2 class="">Judul asldkalskd...</h2>
-        <h2 class="">Chapter</h2>
-        <h2 class="mini:text-center xl:text-start">Rating ⭐⭐⭐⭐</h2>
-    </div>
-    <div class="py-1 mt-1">
-        <img class="card-comic lg:hover:scale-125 hover:mb-5 hover:mt-3" src="https://source.unsplash.com/400x600?comic" alt="image">
-        <h2 class="">Judul asldkalskd...</h2>
-        <h2 class="">Chapter</h2>
-        <h2 class="mini:text-center xl:text-start">Rating ⭐⭐⭐⭐</h2>
-    </div>
+    @endforeach
+
+    {{-- <h1>{{ $posts[0] }}</h1> --}}
+
 </div>

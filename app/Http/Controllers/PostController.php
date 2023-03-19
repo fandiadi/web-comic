@@ -5,6 +5,12 @@ namespace App\Http\Controllers;
 use App\Models\Post;
 use App\Http\Requests\StorePostRequest;
 use App\Http\Requests\UpdatePostRequest;
+use App\Models\Comic;
+use App\Models\ComicGallery;
+use App\Models\ComicGenre;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
 
 class PostController extends Controller
 {
@@ -15,7 +21,13 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+        $project_owner = Str::of(env('APP_NAME'))->lower();
+
+        return view('home', [
+            'updates' => Post::all()->sortByDesc('slug_chapter')->unique('slug')->all(),
+            'projects' => Post::all()->sortByDesc('slug_chapter')->where('project_owner', $project_owner)->unique('slug'),
+            // 'projects' => Post::all()->where('project_owner', $project_owner),
+        ]);
     }
 
     /**
@@ -47,7 +59,14 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        //
+        // $x = Comic::all()->where('slug', $post['slug']);
+        // dump($x);
+        return view('preview_komik', [
+            "post" => $post,
+            "genres" => ComicGenre::all()->where('comic_id', $post['id']),
+            "chapters" => Post::all()->sortByDesc('slug_chapter')->where('slug', $post['slug'])->all(),
+            "gallerys" => ComicGallery::all()->where('slug_comic', $post['slug']),
+        ]);
     }
 
     /**

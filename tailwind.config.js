@@ -9,7 +9,9 @@ module.exports = {
     content: [
         "./resources/**/*blade.php",
         "./resources/**/*.js",
+        "./node_modules/flowbite/**/*.js",
     ],
+    darkMode: 'class',
     theme: {
         container: {
             center: true,
@@ -28,6 +30,9 @@ module.exports = {
                 texthover: '#ef4444',
                 sky: colors.sky,
                 cyan: colors.cyan,
+                boxtype: '#c084fc',
+
+                // #171e27
 
             },
         },
@@ -39,20 +44,13 @@ module.exports = {
             xl: '1440px',
         },
     },
-    plugins: [require("daisyui"),
+
+    plugins: [
         require('@tailwindcss/forms'),
+        require('flowbite/plugin'),
+        require('@tailwindcss/line-clamp'),
     ],
 
-    // Settings for daisyuiUI
-    daisyui: {
-        styled: true,
-        themes: false,
-        base: true,
-        utils: true,
-        logs: true,
-        rtl: false,
-        prefix: "",
-        darkTheme: "light",
-    }
+
 
 }

@@ -1,8 +1,9 @@
 <?php
 
-use Illuminate\Database\Migrations\Migration;
-use Illuminate\Database\Schema\Blueprint;
+use App\Models\Type;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
 
 return new class extends Migration
 {
@@ -16,9 +17,26 @@ return new class extends Migration
         Schema::create('types', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('slug');
+            $table->string('code');
+            $table->string('slug')->unique();
             $table->timestamps();
         });
+
+        Type::create([
+            'name' => 'Manga',
+            'code' => 'jp',
+            'slug' => 'manga',
+        ]);
+        Type::create([
+            'name' => 'Manhua',
+            'code' => 'cn',
+            'slug' => 'manhua',
+        ]);
+        Type::create([
+            'name' => 'Manhwa',
+            'code' => 'kr',
+            'slug' => 'manhwa',
+        ]);
     }
 
     /**

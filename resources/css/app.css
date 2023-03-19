@@ -13,8 +13,15 @@
 @tailwind components;
 @layer components{
     .card-comic {
-        @apply w-28 h-36 rounded-sm shadow-md xl:w-32 xl:h-40;
+        @apply w-28 h-36 rounded-sm shadow-md bg-cover xl:w-32 xl:h-40;
     }
+    .card-flag{
+        @apply absolute top-[5px] ml-[4px] rounded-sm shadow-xl;
+    }
+
+    /* .cutoff-text {
+        @apply --max-lines: 2; display: -webkit-box; overflow: hidden; -webkit-box-orient: vertical; -webkit-line-clamp: var(--max-lines);
+    } */
 }
 
 @tailwind utilities;
